@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 07, 2021 at 02:08 AM
+-- Generation Time: Feb 07, 2021 at 11:45 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -41,23 +41,23 @@ CREATE TABLE `student` (
 
 INSERT INTO `student` (`studentNo`, `fname`, `lname`, `class`) VALUES
 ('Stud001', 'Saheed', 'Ojo', 'JSS 1'),
-('Stud002', 'Micheal	', 'Adeola	', 'JSS 2'),
+('Stud002', 'Micheal', 'Adeola', 'JSS 2'),
 ('Stud003', 'Sola', 'Sade', 'SSS 1'),
 ('Stud004	', 'Abd-Rahmon', 'Salah', 'JSS 1'),
-('Stud005', 'Gbenga	', 'Akin', 'SSS 1'),
-('Stud006', 'Folu	', 'Funke', 'SSS 2'),
-('Stud007	', 'Queenet	', 'Sunday', 'JSS 2'),
-('Stud008', 'Oganga	', 'Prince', 'JSS 3'),
+('Stud005', 'Gbenga', 'Akin', 'SSS 1'),
+('Stud006', 'Folu', 'Funke', 'SSS 2'),
+('Stud007	', 'Queenet', 'Sunday', 'JSS 2'),
+('Stud008', 'Oganga', 'Prince', 'JSS 3'),
 ('Stud009		', 'Samuel', 'Alade', 'SSS 1'),
 ('Stud010', 'Micheal', 'Omowon', 'SSS 2'),
 ('Stud011', 'Samuel', 'Akinsola', 'JSS 3'),
 ('Stud012', 'John', 'Laureta', 'SSS 3'),
 ('Stud013', 'Sunday', 'Smart', 'JSS 1'),
 ('Stud014', 'Abiodun', 'Salaudeen', 'SSS 1'),
-('Stud015', 'Akeem ', 'Adekola', 'JSS 2'),
+('Stud015', 'Akeem', 'Adekola', 'JSS 2'),
 ('Stud016', 'Alarape', 'Adebayo', 'SSS 3'),
 ('Stud017', 'Yusuf', 'Ashir', 'SSS 3'),
-('Stud018', 'Sheriff ', 'Adesola', 'JSS 2'),
+('Stud018', 'Sheriff', 'Adesola', 'JSS 2'),
 ('Stud019', 'Roqeeb', 'Idayat', 'JSS 3'),
 ('Stud020', 'Isiaq', 'Kayode', 'JSS 1');
 
