@@ -148,7 +148,7 @@
                 <div class=" w-100 mx-auto">
                     <div class="row">
                         <div class="col-md-5">
-                            <marquee><h6 style="color: green">Input a class to see Teacher per student</h6></marquee>
+                            <h6 style="color: green">Input a class to see Teacher per student</h6>
                             <form class="align-self-center" method="POST">
                                 <div class="form-group">
                                     <label for="class">Class</label>
