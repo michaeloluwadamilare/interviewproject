@@ -9,17 +9,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('a[data-toggle="tab"]').on('show.bs.tab', function(e) {
-        localStorage.setItem('activeTab', $(e.target).attr('href'));
-    });
-    var activeTab = localStorage.getItem('activeTab');
-    if(activeTab){
-        $('#myTab a[href="' + activeTab + '"]').tab('show');
-    }
-});
-</script>
+<script src="script.js"></script>
 </head>
 
 <body class="text-center">
@@ -168,8 +158,41 @@ $(document).ready(function(){
                             </form>
                         </div>
                         <div class="col-md-6">
+                            <center><h4 style="color: red">Teacher per student</h4></center>
                             <?php
+                             if (isset($_POST['viewDetails'])) {
+                            extract($_POST);
+                                
+                                $staff_sql = "SELECT * FROM teacher WHERE classHeld ='$class'";
+                                $staff_query= mysqli_query($conn,$staff_sql) or die(mysqli_error($conn));
+                                if (mysqli_num_rows($staff_query)==1) {
+                                $staff_result =(mysqli_fetch_array($staff_query));
+                                echo 'Staff No.:   '.$staff_result['staffNo'] .'<br>';
+                                echo 'Staff Fullname:    '.$staff_result['lname'].'  '.$staff_result['fname'].'<br><br>';
+                                }
 
+                                $sql = "SELECT * FROM student JOIN teacher ON student.class= '".$class."'";
+
+                                    $result = mysqli_query($conn, $sql);
+                                        if(mysqli_fetch_array($result) > 0) {
+                                            echo "<table style= width:100%>";
+                     
+                                            while($row = mysqli_fetch_array($result)){
+                                                echo "<tr>";
+                                                echo "<td>" .$row[0]. "</td>";
+                                                echo "<td>" .$row[1]. "</td>";
+                                                echo "<td>" .$row[2]. "</td>";
+                                                echo "<td>" .$row[3]. "</td>";
+                                                echo "</tr>";
+                                            }
+                                            echo "</table>";
+                                            
+                                        } else {
+                                            echo "No records matching your query were found.";
+                                        }
+                                    
+                            }
+                               
                             ?>
                             
                         </div>
