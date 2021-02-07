@@ -24,7 +24,7 @@
                 <a href="#student" class="nav-link" data-toggle="tab">Student Form</a>
             </li>
             <li class="nav-item">
-                <a href="#staffStudentRelationship" class="nav-link" data-toggle="tab">View staff/Student Relationship</a>
+                <a href="#staffStudentRelationship" class="nav-link" data-toggle="tab">View Staff/Student Relationship</a>
             </li>
         </ul>
 
