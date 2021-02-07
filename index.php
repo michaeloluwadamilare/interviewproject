@@ -174,9 +174,10 @@
                                 $sql = "SELECT student.studentNo, student.lname, student.fname, student.class, teacher.staffNo, teacher.fname,teacher.lname FROM student JOIN teacher ON teacher.classHeld=student.class WHERE student.class= '".$class."'";
 
                                     $result = mysqli_query($conn, $sql);
+                                    echo "<table style= width:100%>";
                                         while($row = mysqli_fetch_array($result)){
+
                                             
-                                            echo "<table style= width:100%>";
                                                 
                                                 echo "<tr>";
                                                 echo "<td>" .$row[0]. "</td>";
@@ -185,9 +186,10 @@
                                                 echo "<td>" .$row[3]. "</td>";
                                                 echo "</tr>";
                                             
-                                            echo "</table>";
                                             
-                                        } 
+                                            
+                                        }
+                                   echo "</table>";     
                             }
                                     
                                
