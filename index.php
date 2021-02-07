@@ -157,7 +157,7 @@
                                 <center><button class="btn btn-primary btn" name="viewDetails">View</button></center>
                             </form>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 border border-dark p-3">
                             <center><h4 style="color: red">Teacher per student</h4></center>
                             <?php
                              if (isset($_POST['viewDetails'])) {
@@ -171,7 +171,7 @@
                                 echo 'Staff Fullname:    '.$staff_result['lname'].'  '.$staff_result['fname'].'<br><br>';
                                 }
 
-                                $sql = "SELECT * FROM student JOIN teacher ON student.class= '".$class."'";
+                                $sql = "SELECT * FROM student JOIN teacher ON student.class = teacher.classHeld WHERE student.class= '".$class."'";
 
                                     $result = mysqli_query($conn, $sql);
                                         if(mysqli_fetch_array($result) > 0) {
