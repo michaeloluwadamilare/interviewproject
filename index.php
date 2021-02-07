@@ -148,11 +148,11 @@
                 <div class=" w-100 mx-auto">
                     <div class="row">
                         <div class="col-md-5">
-
+                            <marquee><h6 style="color: green">Input a class to see Teacher per student</h6></marquee>
                             <form class="align-self-center" method="POST">
                                 <div class="form-group">
                                     <label for="class">Class</label>
-                                    <input type="text" class="form-control " placeholder="Input a valid staff Number" id="class" name="class" required>
+                                    <input type="text" class="form-control " placeholder="e.g JSS 1" id="class" name="class" required>
                                 </div>
                                 <center><button class="btn btn-primary btn" name="viewDetails">View</button></center>
                             </form>
